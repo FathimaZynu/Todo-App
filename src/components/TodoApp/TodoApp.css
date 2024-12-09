@@ -1,0 +1,85 @@
+body{
+    margin: 0;
+    color: rgb(255, 255, 255);
+    background-color: rgb(146, 25, 146);
+    font-family: sans-serif;
+}
+.todo-container{
+    width: 350px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+h1{
+    margin: 0;
+    margin-bottom: 15px;
+}
+.input-section{
+    background-color: rgb(39, 37, 37);
+    padding: 18px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px black;
+}
+.input-section input{
+    border-radius: 5px;
+    border: 1px solid silver;
+    width: 70%;
+    padding: 13px;
+    outline: none;
+    box-sizing: border-box;
+}
+button{
+    margin: 10px;
+    background-color: transparent;
+    color: white;
+    border-radius: 5px;
+    padding: 13px;
+    width: 20%;
+    font-weight: bold;
+    cursor: pointer;
+}
+input::placeholder{
+    color: rgba(0, 0, 0, 0.384);
+}
+ul{
+    background-color: rgb(39, 37, 37);
+    border-radius: 10px;
+    min-height: 200px;
+    padding: 15px;
+    text-align: left;
+    box-shadow: 0 4px 6px black;
+}
+ul li{
+    display: flex;
+    background-color: white;
+    color: rgba(0, 0, 0, 0.37);
+    list-style: none;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+.list-items{
+    display: flex;
+}
+.list-items .list-item-list{
+    flex: 1;
+}
+.list-items .list-icons{
+    padding-left: 5px;
+    font-size: 20px;
+    cursor: pointer;
+}
+#complete{
+    color: green;
+}
+#edit{
+    color: blue;
+}
+#delete{
+    color: orange;
+}
+#list-item{
+    text-decoration: line-through;
+}
